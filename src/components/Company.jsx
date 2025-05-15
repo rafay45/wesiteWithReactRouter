@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom';
+import first from "../assets/first.jpg"
+import third from "../assets/third.jpg"
+import fourth from "../assets/fourth.jpg"
 
 function Company() {
   //   const [rank, setRank] = useState([])
@@ -37,17 +40,17 @@ function Company() {
 
        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
   <img
-    src="src/assets/third.jpg"
+    src={third}
     alt="Office"
     className="rounded-2xl shadow-md w-full h-64 object-cover"
   />
   <img
-    src="src/assets/first.jpg"
+    src={first}
     alt="Team"
     className="rounded-2xl shadow-md w-full h-64 object-cover"
   />
   <img
-    src="src/assets/fourth.jpg"
+    src={fourth}
     alt="Product"
     className="rounded-2xl shadow-md w-full h-64 object-cover"
   />

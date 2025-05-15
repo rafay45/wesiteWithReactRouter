@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import store from "../assets/store.webp"
 export default function Home() {
      return (
     <div className="bg-white min-h-screen">
@@ -20,7 +21,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2">
             <img
-              src= "src/assets/store.webp"
+              src= {store}
               alt="Clothing showcase"
               className="rounded-xl shadow-lg"
             />

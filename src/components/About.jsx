@@ -1,3 +1,4 @@
+import second from "../assets/second.jpg"
 export default function About() {
      return (
     <div className="bg-white min-h-screen py-20 px-6">
@@ -5,7 +6,7 @@ export default function About() {
        
         <div>
           <img
-            src= "src/assets/second.jpg"
+            src= {second}
             alt="About Faheem Garments"
             className="rounded-2xl shadow-xl w-full h-auto object-cover border border-blue-100"
           />
