@@ -85,53 +85,52 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <form className="p-6 flex flex-col justify-center">
-                            <div className="flex flex-col">
-                                <label for="name" className="hidden">
-                                    Full Name
-                                </label>
-                                <input
-                                    type="name"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Full Name"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-amber-900 focus:outline-none"
-                                />
-                            </div>
+                       <form className="p-6 max-w-xl mx-auto w-full flex flex-col justify-center">
+  {/* Full Name */}
+  <div className="flex flex-col">
+    <label htmlFor="name" className="hidden">Full Name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Full Name"
+      className="w-full mt-2 py-3 px-4 rounded-lg bg-white border border-gray-300 text-gray-800 font-medium focus:border-amber-900 focus:outline-none"
+    />
+  </div>
 
-                            <div className="flex flex-col mt-2">
-                                <label for="email" className="hidden">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Email"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-amber-900 focus:outline-none"
-                                />
-                            </div>
+  {/* Email */}
+  <div className="flex flex-col mt-4">
+    <label htmlFor="email" className="hidden">Email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Email"
+      className="w-full mt-2 py-3 px-4 rounded-lg bg-white border border-gray-300 text-gray-800 font-medium focus:border-amber-900 focus:outline-none"
+    />
+  </div>
 
-                            <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
-                                    Number
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    id="tel"
-                                    placeholder="Telephone Number"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-amber-900 focus:outline-none"
-                                />
-                            </div>
+  {/* Phone */}
+  <div className="flex flex-col mt-4">
+    <label htmlFor="tel" className="hidden">Phone Number</label>
+    <input
+      type="tel"
+      name="tel"
+      id="tel"
+      placeholder="Phone Number"
+      className="w-full mt-2 py-3 px-4 rounded-lg bg-white border border-gray-300 text-gray-800 font-medium focus:border-amber-900 focus:outline-none"
+    />
+  </div>
 
-                            <button
-                                type="submit"
-                                className="md:w-32 bg-amber-900 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-amber-800 transition ease-in-out duration-300"
-                            >
-                                Submit
-                            </button>
-                        </form>
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="w-full md:w-40 bg-amber-900 hover:bg-amber-800 text-white font-bold py-3 px-6 rounded-lg mt-6 transition duration-300"
+  >
+    Submit
+  </button>
+</form>
+
                     </div>
                 </div>
             </div>
